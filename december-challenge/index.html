@@ -10,7 +10,20 @@
 @keyframes mammothBubble{0%,10%,75%,100%{opacity:0;transform:translateY(5px)}15%,65%{opacity:1;transform:translateY(0)}}
 @media(max-width:500px){.mammoth-companion{right:1%;bottom:1%;width:102px}.mammoth-companion:after{font-size:8px;padding:5px 7px}}
 @media(max-width:850px){.layout{grid-template-columns:1fr}.scene{min-height:540px}.side{min-height:520px}}@media(max-width:500px){.app{padding:16px 12px 28px}.brand{letter-spacing:.12em;font-size:9px}.mark{width:34px;height:34px}.hero{padding-top:23px}.scene{min-height:500px}.doorwrap{width:150px;height:250px}.mission-card{bottom:2%;padding:13px 12px}.side{padding:18px}.footer{font-size:9px}}
-.art-label{display:none!important;}</style>
+.art-label{display:none!important;}
+/* Mobile readability fix — v2.1: keep mission text clear of mascot */
+@media(max-width:500px){
+  .mission-card{bottom:94px!important;width:94%!important;padding:12px 12px!important;z-index:7!important;background:rgba(7,14,11,.94)!important;backdrop-filter:blur(16px)}
+  .mission-title{font-size:clamp(19px,5.4vw,24px)!important;line-height:1.15}
+  .mission-region{font-size:11px;line-height:1.35}
+  .mission-distance{font-size:clamp(30px,8vw,38px)!important;margin-top:6px}
+  .mission-type{font-size:11px;margin-top:2px}
+  .quote{font-size:11px;line-height:1.35;margin-top:7px}
+  .mammoth-companion{width:76px!important;right:2%!important;bottom:0!important;z-index:6}
+  .mammoth-companion:after{font-size:7px;padding:4px 6px}
+}
+@media(max-width:380px){.mission-card{bottom:88px!important;padding:10px 9px!important}.mission-day{font-size:9px}.quote{font-size:10px}}
+</style>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#14251e">
 <meta name="apple-mobile-web-app-capable" content="yes">
